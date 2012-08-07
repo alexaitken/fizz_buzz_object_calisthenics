@@ -22,10 +22,6 @@ public class WordResult implements Result {
 	public static final WordResult FIZZ = new WordResult(Word.FIZZ);
 	public static final WordResult BUZZ = new WordResult(Word.BUZZ);
 	public static final WordResult ZAP = new WordResult(Word.ZAP);
-	public static final Result FIZZBUZZ = FIZZ.append(BUZZ);
-	public static final Result FIZZZAP = FIZZ.append(ZAP);
-	public static final Result BUZZZAP = BUZZ.append(ZAP);
-	public static final Result FIZZBUZZZAP = FIZZ.append(BUZZ).append(ZAP);
 	
 	
 	private final String number;

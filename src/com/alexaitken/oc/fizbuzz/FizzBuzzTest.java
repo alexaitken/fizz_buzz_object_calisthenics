@@ -10,6 +10,11 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+	public static final Result FIZZBUZZ = FIZZ.append(BUZZ);
+	public static final Result FIZZZAP = FIZZ.append(ZAP);
+	public static final Result BUZZZAP = BUZZ.append(ZAP);
+	public static final Result FIZZBUZZZAP = FIZZ.append(BUZZ).append(ZAP);
+	
 	
 	@Test
 	public void returns_the_number_when_not_divisible_by_3_and_5() throws Exception {
@@ -45,7 +50,7 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void returns_fizzzap_when_divisible_by_3_and_7() throws Exception {
-		assertEquals(WordResult.FIZZZAP, aFizzBuzzFor(21).translate());
+		assertEquals(FIZZZAP, aFizzBuzzFor(21).translate());
 	}
 
 	
